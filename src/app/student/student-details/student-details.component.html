@@ -9,7 +9,7 @@
       [footerHeight]="50"
       [rowHeight]="'50'"
       [scrollbarV]="false"
-   
+      [limit] = "10"
       (page)="onPage($event)"
   
     >
@@ -45,7 +45,7 @@
       </ngx-datatable-column>
       
 
-      <ngx-datatable-column name="Index" [width]="80">
+      <ngx-datatable-column name="Id" [width]="80">
         <ng-template let-rowIndex="rowIndex" let-row="row" ngx-datatable-cell-template>
           <strong>{{ rowIndex +1 }}</strong>
         </ng-template>
@@ -56,12 +56,14 @@
           <strong>{{ value }}</strong>
         </ng-template>
       </ngx-datatable-column>
-      <ngx-datatable-column name="Gender" [width]="300">
+      <ngx-datatable-column name="Gender" [width]="100">
         <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
           <i>{{ value }}</i>
 
         </ng-template>
       </ngx-datatable-column>
-      <ngx-datatable-column name="Age"></ngx-datatable-column>
+      <ngx-datatable-column name="Age" [width]="80">
+          {{value}}
+      </ngx-datatable-column>
     </ngx-datatable>
   </div>
