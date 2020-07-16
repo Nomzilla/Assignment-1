@@ -1,0 +1,55 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Student-Teacher Database</a>
+        </div>
+
+        <div class="navbar-default">
+             
+            <!--
+            <ul class="nav navbar-nav">
+                 <li routerLinkActive="active"><a routerLink="/students">Students</a></li>
+                <li routerLinkActive="active"><a routerLink="/teachers">Teachers</a></li>
+            </ul>
+            --> 
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" appDropdown>
+                    <a  
+                    style="cursor: pointer;"
+                    class="dropdown-toggle" 
+                    role="button">Select
+                <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li routerLinkActive="active"><a routerLink="/students">Students</a></li>
+                        <li routerLinkActive="active"><a routerLink="/teachers">Teachers</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+           
+            <!--
+            <ul class="nav navbar-nav">
+                <li routerLinkActive="active"><a routerLink="/students">Students</a></li>
+                <li routerLinkActive="active"><a routerLink="/teachers">Teachers</a></li>
+            </ul>
+            
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" appDropdown>
+                    <a href="#" 
+                    class="dropdown-toggle" 
+                    role="button">Select
+                <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li routerLinkActive="active"><a routerLink="/students">Students</a></li>
+                        <li routerLinkActive="active"><a routerLink="/teachers">Teachers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            -->
+
+        </div>
+    </div>
+</nav>
